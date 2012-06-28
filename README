@@ -14,7 +14,7 @@ The Prefinery Ruby API gets Prefinery integrated into your Rails website in seco
 Installation
 ============
 
-  script/plugin install git://github.com/compulsivo/prefinery-ruby-api.git
+  gem 'prefinery'
 
 
 Configuration
