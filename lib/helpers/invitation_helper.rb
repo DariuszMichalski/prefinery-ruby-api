@@ -3,10 +3,17 @@ module Prefinery
     def prefinery_invitation_javascript(options = {})
       options.symbolize_keys!
       <<-HTML
-      <style type='text/css'>@import url('http://www.prefinery.com/stylesheets/widget.css');</style>
-      <script src='http://www.prefinery.com/javascripts/widget.js' type='text/javascript'></script>
+      <script type="text/javascript">
+        var prefineryJsHost = 'http://www.prefinery.com/';
+        document.write(unescape("%3Cscript src='" + prefineryJsHost + "javascripts/widget.js' type='text/javascript'%3E%3C/script%3E"))
+      </script>
       <script type='text/javascript' charset='utf-8'>
-          Prefinery.invite("#{Prefinery.url}/betas/#{options[:beta_id]}/testers/new?display=popup");
+        var prefinery_apply_options = {
+          account: "#{options[:subdomain]}",
+          beta_id: "#{options[:beta_id]}",
+          link_id: "prefinery_apply_link"
+        };
+        Prefinery.apply(prefinery_apply_options);
       </script>
       HTML
     end

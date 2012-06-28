@@ -69,7 +69,7 @@ Helpers
 
 To include Prefinery's invitation javascript on your site's signup page:
 
-<%= prefinery_invitation_javascript(:beta_id => 74) %>
+<%= prefinery_invitation_javascript(:subdomain => 'acme', :beta_id => 74) %>
 
 To place a link on your site's signup page which will launch the Prefinery invitation widget:
 
@@ -79,4 +79,4 @@ To place a link on your site's signup page which will launch the Prefinery invit
 License
 =======
 
-Copyright (c) 2009 Compulsivo, Inc. Released under the MIT license
+Copyright (c) 2009-2012 Compulsivo, Inc. Released under the MIT license
