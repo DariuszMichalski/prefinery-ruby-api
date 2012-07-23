@@ -10,7 +10,7 @@
 #
 #
 # Read the docs at:
-# http://app.prefinery.com/api
+# https://www.prefinery.com/api
 #
 
 if Rails::VERSION::STRING.to_i < 3
