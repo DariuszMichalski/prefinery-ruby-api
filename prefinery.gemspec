@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "prefinery"
-  s.version = "0.1.0"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Justin Britten"]
-  s.date = "2012-06-28"
+  s.date = "2012-07-23"
   s.description = "Ruby API for Prefinery.com"
   s.email = "support@prefinery.com"
   s.extra_rdoc_files = [
@@ -26,7 +26,8 @@ Gem::Specification.new do |s|
     "init.rb",
     "install.rb",
     "lib/helpers/invitation_helper.rb",
-    "lib/prefinery.rb"
+    "lib/prefinery.rb",
+    "prefinery.gemspec"
   ]
   s.homepage = "https://github.com/compulsivo/prefinery-ruby-api"
   s.licenses = ["MIT"]
