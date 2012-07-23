@@ -3,10 +3,7 @@ module Prefinery
     def prefinery_invitation_javascript(options = {})
       options.symbolize_keys!
       <<-HTML
-      <script type="text/javascript">
-        var prefineryJsHost = 'http://www.prefinery.com/';
-        document.write(unescape("%3Cscript src='" + prefineryJsHost + "javascripts/widget.js' type='text/javascript'%3E%3C/script%3E"))
-      </script>
+      <script type="text/javascript" src="https://www.prefinery.com/javascripts/widget.js"></script>
       <script type='text/javascript' charset='utf-8'>
         var prefinery_apply_options = {
           account: "#{options[:subdomain]}",

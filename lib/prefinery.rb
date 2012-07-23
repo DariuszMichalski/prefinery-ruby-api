@@ -50,11 +50,11 @@ module Prefinery
     end
     
     def protocol
-      secure ? "https" : "http"
+      secure ? "https" : "https"
     end
 
     def url
-      URI.parse("#{protocol}://#{host}:#{port}")
+      URI.parse("https://#{host}:#{port}")
     end
     
     def resources
