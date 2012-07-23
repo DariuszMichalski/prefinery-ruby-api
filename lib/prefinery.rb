@@ -4,7 +4,6 @@
 # 
 #   Prefinery.configure do |config|
 #     config.subdomain = 'compulsivo'
-#     config.secure = false
 #     config.api_key = 8cc4aae2a2fc0e1278a2079ea95b219e26f6beba
 #   end
 #
@@ -42,7 +41,7 @@ module Prefinery
     end
     
     def port
-      @port || (secure ? 443 : 80)
+      @port || (secure ? 443 : 443)
     end
 
     def api_key
